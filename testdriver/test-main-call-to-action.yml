@@ -1,0 +1,20 @@
+version: 4.1.29
+steps:
+  - prompt: Focus the browser window.
+    commands:
+      - command: focus-application
+        name: Google Chrome
+  - prompt: Click the main call to action button on the page.
+    commands:
+      - command: hover-text
+        text: Next
+        description: main call to action button on the page
+        action: click
+  - prompt: >-
+      Assert that the action leads to the expected page or popup.  # Use the
+      content of the file from the environment
+    commands:
+      - command: assert
+        expect: >-
+          the popup with the form titled "Let's personalize your tour!" is
+          visible
