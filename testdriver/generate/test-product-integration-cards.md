@@ -1,0 +1,1 @@
+1. Verify that all integration cards
