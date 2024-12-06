@@ -1,0 +1,33 @@
+version: 4.1.29
+steps:
+  - prompt: >-
+      Verify that all integration cards  # Use the content of the file from the
+      environment
+    commands:
+      - command: hover-text
+        text: Next
+        description: next button on the overlay
+        action: click
+      - command: scroll-until-text
+        text: Salesforce
+        direction: down
+      - command: assert
+        expect: Salesforce card is visible
+      - command: assert
+        expect: QuickBooks card is visible
+      - command: assert
+        expect: Jira card is visible
+      - command: assert
+        expect: Slack card is visible
+      - command: assert
+        expect: HubSpot card is visible
+      - command: assert
+        expect: NetSuite card is visible
+      - command: assert
+        expect: Monday.com card is visible
+      - command: assert
+        expect: Greenhouse card is visible
+      - command: assert
+        expect: Dropbox card is visible
+      - command: assert
+        expect: Gusto card is visible
