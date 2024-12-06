@@ -1,0 +1,12 @@
+version: 4.1.29
+steps:
+  - prompt: Assert that the webpage loads without errors.
+    commands:
+      - command: assert
+        expect: Example Domain text is visible
+  - prompt: >-
+      Assert that the logo is displayed on the page.  # Use the content of the
+      file from the environment
+    commands:
+      - command: assert
+        expect: the logo is displayed on the page
