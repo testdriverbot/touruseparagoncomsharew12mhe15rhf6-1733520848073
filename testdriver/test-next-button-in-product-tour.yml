@@ -1,0 +1,22 @@
+version: 4.1.29
+steps:
+  - prompt: Locate the "Next" button in the product tour popup.
+    commands:
+      - command: hover-text
+        text: Next
+        description: next button in the product tour popup
+        action: click
+      - command: hover-text
+        text: Submit
+        description: submit button in the product tour popup
+        action: click
+      - command: hover-text
+        text: Submit
+        description: submit button in the product tour popup
+        action: click
+  - prompt: Click the "Next" button.
+    commands:
+      - command: hover-text
+        text: Next
+        description: next button in the product tour popup
+        action: click
